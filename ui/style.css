@@ -260,85 +260,34 @@ nav{
 	background: white;
 	position: relative;
 }
-.confiance{
+.message{
 	margin-right: 60px;
 	display: flex;
 	justify-content: space-between;
 }
-.confiance p{
+.message p{
 	width: 235px;
 	color: #7e7e7e;
 	font-size: 16px;
 	margin: 25px 0 0 20px;
 }
-.confiance p span{
+.message p span{
 	text-transform: uppercase;
 	font-size: 16px;
 	color: #181818;
 	font-family: "vision-heavy",sans-serif;
 }
-.circle-confiance{
+.circle-trust{
 	width: 75px;
 	height: 75px;
-	background-image: url(media/img/circle.png);
+	background-image: url(media/img/circle-percent.png);
 	margin: 11px;
 }
-.social{
-	background-image: url(media/img/graph.png);
-	background-repeat: no-repeat;
-	background-position-y: 18px;
-    background-position-x: 10px;
-}
-.graph{
-	width: 275px;
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	margin-top: 15px;
-	margin-left: 16px;
-}
-.graph li{
-	width: 27px;
-	color: rgba(255,255,255,0.5);
-	text-align: center;
-}
-.graph .facebook{
-	background-color: #3b5999;
-    height: 40px;
-    line-height: 40px;
-    margin-top: 30px;
-}
-.graph .google{
-	background-color: #dd4b39;
-    height: 20px;
-    line-height: 20px;
-    margin-top: 50px;
-}
-.graph .rss{
-	background-color: #e6973b;
-    height: 29px;
-    line-height: 29px;
-    margin-top: 41px;
-}
-.graph .twitter{
-	background-color: #55acee;
-    height: 70px;
-    line-height: 70px;
-}
-.graph .insta{
-	background-color: #e4405f;
-    height: 55px;
-    line-height: 55px;
-    margin-top: 15px;
-}
-.social p{
-	position: absolute;
-	font-family: "vision-heavy",sans-serif;
-	font-size: 16px;
-	color: #181818;
-	text-transform: uppercase;
-	top: 16px;
-    left: 35px;
+.circle-thankyou{
+	width: 75px;
+	height: 75px;
+	background-image: url(media/img/circle-approve.png);
+	margin: 11px;
 }
 /*######################################################*/
 /* ###############     DEPOSER MENU      ###############*/

@@ -24,7 +24,7 @@
     			</div>
     			<nav>
     				<div class="logo-topbar"></div>
-    				<button class="btn-sign-out">Leave ATM<i class="fas fa-sign-out-alt"></i></button>
+    				<button class="btn-sign-out">Leave<i class="fas fa-sign-out-alt"></i></button>
     			</nav> 
     		</div>
 <!-- ########### GENERAL ###########  -->
@@ -59,22 +59,19 @@
 		    		</div>
     			</div>
     			<div class="flex">
-    				<div class="pub box-shadow confiance">
+    				<div class="pub box-shadow message">
     					<p>
     						<span>You trust us!</span><br>
     						The number of accounts has increased by 7% since 2017
     					</p>
-    					<div class="circle-confiance"></div>
+    					<div class="circle-trust"></div>
     				</div>
-    				<div class="pub box-shadow social">
-    					<p>SSocial Media</p>
-    					<ul class="graph">
-    						<li class="facebook"><i class="fab fa-facebook-f"></i></li>
-    						<li class="google"><i class="fab fa-google-plus-g"></i></li>
-    						<li class="rss"><i class="fas fa-rss"></i></li>
-    						<li class="twitter"><i class="fab fa-twitter"></i></li>
-    						<li class="insta"><i class="fab fa-instagram"></i></li>
-    					</ul>
+    				<div class="pub box-shadow message">
+    					<p>
+    						<span>Thank you for using</span><br>
+    						Fleeca Bank, everything at a price.
+    					</p>
+    					<div class="circle-thankyou"></div>
     				</div>
     			</div>
 	    	</div>
@@ -83,7 +80,7 @@
     			<div class="flex">
     				<div class="btn btn-blue banniere">
     					<p>Deposit your money<br>
-		    			<span>The most future-proof bank in Los Santos</span></p>
+		    			<span>To the most future-proof bank in Los Santos</span></p>
     				</div>
     				<button class="btn btn-grey back">
     					<i class="fas fa-bars"></i>
@@ -121,14 +118,14 @@
     			</div>
     			<form id="withdraw1">
     				<div class="input-cont box-shadow">
-    					<label>How much would you like to pay out ?</label>
+    					<label>How much would you like to withdraw ?</label>
     					<input id="amountw" type="number" placeholder="0 $">
     				</div>
     				<button class="btn btn-green" type="submit">
     					<i class="fas fa-check"></i>
 	    				<span class="fas fa-check icon"></span>
 	    				<p>Confirm<br>
-	    				<span>Your payout</span></p>
+	    				<span>Your withdrawal</span></p>
     				</button>
 				</form>
 	    	</div>
@@ -220,7 +217,7 @@
     		$('.btn-sign-out').click(function(){
 	            $('#general, #waiting, #transferUI, #withdrawUI, #depositUI, #topbar').hide();
 	            $('body').removeClass("active");
-	            $.post('http://new_banking/NUIFocusOff', JSON.stringify({}));
+	            $.post('https://esx_newbanking/NUIFocusOff', JSON.stringify({}));
 	        })
 	        $('.back').click(function(){
 	            $('#depositUI, #withdrawUI, #transferUI').hide();
@@ -249,7 +246,7 @@
 	        })
 	        $("#deposit1").submit(function(e) {
 		        e.preventDefault(); // Prevent form from submitting
-		        $.post('http://new_banking/deposit', JSON.stringify({
+		        $.post('https://esx_newbanking/deposit', JSON.stringify({
 		            amount: $("#amount").val()
 		        }));
 				$('#depositUI').hide();
@@ -258,7 +255,7 @@
 			});
 			$("#transfer1").submit(function(e) {
 		        e.preventDefault(); // Prevent form from submitting
-		        $.post('http://new_banking/transfer', JSON.stringify({
+		        $.post('https://esx_newbanking/transfer', JSON.stringify({
 					to: $("#to").val(),
 		            amountt: $("#amountt").val()
 		        }));
@@ -268,7 +265,7 @@
 			});
 			$("#withdraw1").submit(function(e) {
 				e.preventDefault(); // Prevent form from submitting
-		        $.post('http://new_banking/withdrawl', JSON.stringify({
+		        $.post('https://esx_newbanking/withdrawl', JSON.stringify({
 		            amountw: $("#amountw").val()
 		        }));
 				$('#withdrawUI').hide();
@@ -279,7 +276,7 @@
 		        if (data.which == 27){
 		            $('#general, #waiting, #transferUI, #withdrawUI, #depositUI, #topbar').hide();
 		            $('body').removeClass("active");
-		            $.post('http://new_banking/NUIFocusOff', JSON.stringify({}));
+		            $.post('https://esx_newbanking/NUIFocusOff', JSON.stringify({}));
 		        }
 		    }
     	</script>
