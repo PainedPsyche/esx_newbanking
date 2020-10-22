@@ -16,3 +16,5 @@ https://github.com/NewWayRP/new_banking
 - Added proper localization of lua files
 - Replaced the graph that contained 'real life' company logos with a more generic banner (hey, this is GTA!)
 - Changed map blip colors to 'Fleeca Bank green'
+- Fixed a bug with transaction result alert being under the main window and only partially visible
+- Reduced the time transaction result alert is on screen from 5 to 3 seconds
