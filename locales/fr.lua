@@ -1,4 +1,7 @@
 Locales['fr'] = {
+    ['bank'] = 'Bank',
+    ['bank_pacific'] = 'Pacific Bank',
+    ['atm'] = 'ATM',
     ['access_account'] = 'Appuie sur ~INPUT_PICKUP~ pour accèder à tes comptes ~b~',
     ['success_deposit'] = 'Dépot effectué.',
     ['success_withdraw'] = 'Retrait effectué.',
