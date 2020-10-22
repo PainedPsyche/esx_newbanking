@@ -1,29 +1,18 @@
-Based on onlyserenity script (https://github.com/onlyserenity/new_banking)
-New UI and some improvments
+# Restored and cleaned version of new_banking
 
----
+Based on NewWayRP's and onlyserenity's projects:
 
-FXServer NEW_BANKING
+https://github.com/onlyserenity/new_banking
 
-[REQUIREMENTS]
+https://github.com/NewWayRP/new_banking
 
-Dependencies For Full Functionality
+## Requirements
+- legacy version of [es_extended](https://github.com/esx-framework/es_extended/tree/v1-final)
 
-es_extended => https://github.com/ESX-Org/es_extended
-
-Install To resources/[esx]/new_banking << MUST BE INSTALLED HERE
-
-Add this in your server.cfg :
-start new_banking
-
-Credits: Script Created By: @onlyserenity(amjedcha) edited and improved by NewWay
-
-Discord: https://discord.gg/dSYb4j2
-
----
-
-![](https://i.imgur.com/bjfLLr9.png)
-![](https://i.imgur.com/JnlPAHN.png)
-![](https://i.imgur.com/OU5B0yo.png)
-![](https://i.imgur.com/t9axH2n.png)
-![](https://i.imgur.com/MH7MdKA.png)
+## My updates:
+- Renamed the resource to reflect it's dependency on es_extended
+- Replaced old format descriptor with the new one
+- Modified the directory structure and file naming conventions to more closely match those used in esx projects
+- Added proper localization of lua files
+- Replaced the graph that contained 'real life' company logos with a more generic banner (hey, this is GTA!)
+- Changed map blip colors to 'Fleeca Bank green'
